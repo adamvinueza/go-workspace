@@ -14,14 +14,13 @@ func isSubsequence(candidate string, target string) bool {
 		} else {
 			return false
 		}
-	} else {
-		return true
 	}
+	return true
 }
 
-func sortWordsByLength(candidates []string) {
-	sort.Slice(candidates, func(i, j int) bool {
-		return len(candidates[i]) > len(candidates[j])
+func sortWordsByLength(words []string) {
+	sort.Slice(words, func(i, j int) bool {
+		return len(words[i]) > len(words[j])
 	})
 }
 
