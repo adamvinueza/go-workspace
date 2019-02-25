@@ -1,0 +1,7 @@
+version: '3'
+services:
+    go-web-server:
+        build: .
+        ports:
+            - "8000:8080"
+        image: "golang:rc-alpine3.9"
